@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO DE FOTOGRAFIA</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css"> <!-- Agrega aquí tu archivo de estilos personalizados -->
+    <style>
+        .swiper-slide img {
+            pointer-events: none; /* Evita que la marca de agua sea clickeable */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-menu">
+            <div class="logo">
+                <img src="LOGO.jpeg" alt="Logo de Studio de Fotografía">
+                <p>JH Estudio de Fotografía</p> <!-- Cambiado el nombre del estudio -->
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="studio.jpg" alt="Imagen 1"></div>
+            <div class="swiper-slide"><img src="slaider.jpeg" alt="Imagen 2"></div>
+            <div class="swiper-slide"><img src="ejemplos.jpg" alt="Imagen 3"></div>
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Secciones -->
+    <section id="inicio" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="inicio-container">
+                    <div class="inicio-texto">
+                        <h2>Bienvenido a Studio de Fotografía</h2>
+                        <p>Somos un equipo apasionado de fotógrafos dedicados a capturar momentos especiales y crear recuerdos duraderos para ti y tus seres queridos.</p>
+                        <p>Desde retratos familiares hasta eventos especiales, estamos aquí para inmortalizar cada momento importante de tu vida.</p>
+                        <!-- Botón para redirigir al PDF -->
+                        <a href="FOTOGRAFIA.pdf" target="_blank">MAS INFORMACION </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="inicio-imagen">
+                    <img src="inicio.jpg" alt="Studio de Fotografía" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="container">
+        <div class="row">
+            <div class="col">
+                <div class="galeria-container">
+                    <h2>Galería</h2>
+                    <div class="galeria-imagenes">
+                        <div class="imagen">
+                            <img src="paisaje2.jpg" alt="Imagen 1">
+                            <div class="overlay">
+                                <h3>Paisajes</h3>
+                                <p>Los mejores lugares por conocer</p>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="familia.jpg" alt="Imagen 2">
+                            <div class="overlay">
+                                <h3>Familiares</h3>
+                                <p>los mejores momentos en familia</p>
+                            </div>
+                        </div>
+                        <div class="imagen">
+                            <img src="eventos.jpeg" alt="Imagen 3">
+                            <div class="overlay">
+                                <h3>Eventos</h3>
+                                <p>por siempre</p>
+                            </div>
+                        </div>
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="servicios-video">
+                        <!-- Aquí inserta el video -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iz1XdYMSViI?si=714WpRL-asKwebOj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="servicios-texto">
+                        <h2 class="section-title">Nuestros Servicios</h2>
+                        <ul class="servicios-lista">
+                            <li>
+                                <h3>Sesiones Fotográficas</h3>
+                                <p>Te ofrecemos sesiones fotográficas profesionales para capturar tus momentos más especiales.</p>
+                            </li>
+                            <li>
+                                <h3>Retratos</h3>
+                                <p>Realizamos retratos personalizados para destacar tu belleza y personalidad única.</p>
+                            </li>
+                            <li>
+                                <h3>Fotografía de Eventos</h3>
+                                <p>Cubrimos todo tipo de eventos, desde bodas y cumpleaños hasta eventos corporativos y sociales.</p>
+                            </li>
+                            <li>
+                                <h3>Edición de Fotos</h3>
+                                <p>Ofrecemos servicios de edición de fotos para mejorar y retocar tus imágenes según tus preferencias.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes" class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="section-heading">Opiniones de nuestros clientes</h2>
+            <div class="opiniones-container">
+                <div class="opinion">
+                    <p class="opinion-text">"¡Increíble experiencia! El equipo de fotógrafos realmente capturó la esencia de nuestro evento. Definitivamente los recomendaré a amigos y familiares."</p>
+                    <span class="cliente">- María G.</span>
+                </div>
+                <div class="opinion">
+                    <p class="opinion-text">"No podría estar más feliz con el resultado. Las fotos son impresionantes y el proceso fue fácil y divertido. ¡Gracias!"</p>
+                    <span class="cliente">- Juan R.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="container-fluid">
+    <section id="contacto" class="contacto-footer">
+        <div class="contacto-container">
+            <h2>Contacto</h2>
+            <p>¡Contáctanos para reservar una sesión fotográfica o para cualquier consulta!</p>
+            <div class="informacion-contacto">
+                <p><strong>Teléfono:</strong>871 328 2136</p>
+                <p><strong>Email:</strong> hhabacuc27@gmail.com</p>
+                <p><strong>Encuéntranos en Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61559015589886&mibextid=ZbWKwL" target="_blank">Nuestra Página</a></p>
+            </div>
+           <!-- Botón para ir al formulario -->
+<a href="formulario.html" class="btn btn-primary">Contactanos</a>
+        </div>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57527.32763655485!2d-100.41690537832034!3d25.689256500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866295e3f39ae2e3%3A0xf0dd61563650de6d!2sEstudio%20Guerra!5e0!3m2!1ses-419!2smx!4v1714789833026!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+</footer>
+
+   
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+
+            // Función para mover automáticamente el slider
+            function autoSlide() {
+                setInterval(() => {
+                    swiper.slideNext(); // Ir al siguiente slide
+                }, 2000); // Cambia el valor de 3000 para ajustar la velocidad del slider
+            }
+
+            autoSlide();
+        });
+
+
+    </script>
+
+    <!-- Bootstrap JS y jQuery (si es necesario) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</body>
+</html>
